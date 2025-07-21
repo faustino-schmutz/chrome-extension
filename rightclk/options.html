@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Right Click Unlocker Pro - Settings</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+    
+    .container {
+      background: white;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    
+    .title {
+      font-size: 28px;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 10px;
+    }
+    
+    .subtitle {
+      font-size: 16px;
+      color: #666;
+    }
+    
+    .section {
+      margin-bottom: 30px;
+      padding: 20px;
+      background: #f9f9f9;
+      border-radius: 8px;
+    }
+    
+    .section-title {
+      font-size: 18px;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 15px;
+    }
+    
+    .shortcut-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+    
+    .shortcut-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px;
+      background: white;
+      border-radius: 6px;
+      border: 1px solid #e0e0e0;
+    }
+    
+    .shortcut-item code {
+      background: #e8f4f8;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      color: #2196F3;
+    }
+    
+    .list-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    
+    .list-section {
+      background: white;
+      padding: 15px;
+      border-radius: 6px;
+      border: 1px solid #e0e0e0;
+    }
+    
+    .list-title {
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #333;
+    }
+    
+    .add-domain {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 15px;
+    }
+    
+    .add-domain input {
+      flex: 1;
+      padding: 8px 12px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    
+    .add-domain button {
+      padding: 8px 16px;
+      background: #2196F3;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    
+    .add-domain button:hover {
+      background: #1976D2;
+    }
+    
+    .domain-list {
+      max-height: 200px;
+      overflow-y: auto;
+    }
+    
+    .domain-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 12px;
+      margin-bottom: 5px;
+      background: #f5f5f5;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    
+    .remove-btn {
+      background: #f44336;
+      color: white;
+      border: none;
+      padding: 4px 8px;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 12px;
+    }
+    
+    .remove-btn:hover {
+      background: #d32f2f;
+    }
+    
+    .export-import {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+    }
+    
+    .export-btn, .import-btn {
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    
+    .export-btn {
+      background: #4CAF50;
+      color: white;
+    }
+    
+    .export-btn:hover {
+      background: #45a049;
+    }
+    
+    .import-btn {
+      background: #FF9800;
+      color: white;
+    }
+    
+    .import-btn:hover {
+      background: #f57c00;
+    }
+    
+    .hidden-input {
+      display: none;
+    }
+    
+    .stats {
+      text-align: center;
+      color: #666;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="title">Right Click Unlocker Pro</div>
+      <div class="subtitle">Advanced Settings & Management</div>
+    </div>
+    
+    <div class="section">
+      <div class="section-title">Keyboard Shortcuts</div>
+      <div class="shortcut-list">
+        <div class="shortcut-item">
+          <span>Toggle Extension</span>
+          <code>Ctrl+Shift+R</code>
+        </div>
+        <div class="shortcut-item">
+          <span>Select All Text</span>
+          <code>Ctrl+Shift+A</code>
+        </div>
+        <div class="shortcut-item">
+          <span>Copy All Text</span>
+          <code>Ctrl+Shift+C</code>
+        </div>
+        <div class="shortcut-item">
+          <span>Mac: Toggle Extension</span>
+          <code>Cmd+Shift+R</code>
+        </div>
+        <div class="shortcut-item">
+          <span>Mac: Select All Text</span>
+          <code>Cmd+Shift+A</code>
+        </div>
+        <div class="shortcut-item">
+          <span>Mac: Copy All Text</span>
+          <code>Cmd+Shift+C</code>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section">
+      <div class="section-title">Site Management</div>
+      <div class="list-container">
+        <div class="list-section">
+          <div class="list-title">Whitelist (Only run on these sites)</div>
+          <div class="add-domain">
+            <input type="text" id="whitelistInput" placeholder="example.com">
+            <button onclick="addToWhitelist()">Add</button>
+          </div>
+          <div class="domain-list" id="whitelistDomains"></div>
+        </div>
+        
+        <div class="list-section">
+          <div class="list-title">Blacklist (Never run on these sites)</div>
+          <div class="add-domain">
+            <input type="text" id="blacklistInput" placeholder="example.com">
+            <button onclick="addToBlacklist()">Add</button>
+          </div>
+          <div class="domain-list" id="blacklistDomains"></div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section">
+      <div class="section-title">Settings Import/Export</div>
+      <div class="export-import">
+        <button class="export-btn" onclick="exportSettings()">Export Settings</button>
+        <button class="import-btn" onclick="document.getElementById('importFile').click()">Import Settings</button>
+        <input type="file" id="importFile" class="hidden-input" accept=".json" onchange="importSettings(event)">
+      </div>
+    </div>
+    
+    <div class="stats" id="stats">
+      Loading statistics...
+    </div>
+  </div>
+  
+  <script src="options.js"></script>
+</body>
+</html>
